@@ -1,6 +1,9 @@
 var fs = require("fs");
+
+console.log(process.cwd());
+
 var input = fs
-  .readFileSync("../input.txt")
+  .readFileSync(__dirname +"/../input.txt")
   .toString()
   .split("\n")
   .map(val => parseInt(val));
